@@ -18,4 +18,4 @@ fun main(args: Array<String>) {
 @Bean
 fun sampleMCPService(sampleMCPService: SampleMCPService) : ToolCallbackProvider {
     return MethodToolCallbackProvider.builder().toolObjects(sampleMCPService).build()
-}-
+}
