@@ -12,10 +12,5 @@ import org.springframework.context.annotation.Bean
 class SamplemcpApplication
 
 fun main(args: Array<String>) {
-	runApplication<SamplemcpApplication>(*args)
-}
-
-@Bean
-fun sampleMCPService(sampleMCPService: SampleMCPService) : ToolCallbackProvider {
-    return MethodToolCallbackProvider.builder().toolObjects(sampleMCPService).build()
+    runApplication<SamplemcpApplication>(*args)
 }
